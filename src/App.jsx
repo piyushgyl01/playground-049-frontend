@@ -7,12 +7,12 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Post from "./pages/Post";
 import Update from "./pages/Update";
-// import { AuthProvider } from "./contexts/authContext";
+import { AuthProvider } from "./contexts/authContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 export default function App() {
   return (
-    // <AuthProvider>
+    <AuthProvider>
       <Router>
         <Navbar />
         <Routes>
@@ -26,6 +26,6 @@ export default function App() {
           </Route>
         </Routes>
       </Router>
-    // </AuthProvider>
+    </AuthProvider>
   );
 }
